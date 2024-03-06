@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>CartPage</title>
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body><h1> Cart</h1>
+
+<div class="shopping-cart">
+
+    <div class="column-labels">
+        <label class="product-image">Image</label>
+        <label class="product-details">Product</label>
+        <label class="product-price">Price</label>
+        <label class="product-quantity">Quantity</label>
+        <label class="product-removal">Remove</label>
+        <label class="product-line-price">Total</label>
+    </div>
+
+    <div class="product">
+        <div class="product-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxwqlQyI485lUSRyc_tXzquV6lzDfK9lb8hzvpSzj_P3-TOzGV3ozxnl5xH0yEHSejGI&usqp=CAU"
+                 style="border-radius: 15px">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Dingo Dog Bones</div>
+            <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these
+                things! I got curious once and ate one myself. I'm a fan.</p>
+        </div>
+        <div class="product-price">11.80</div>
+        <div class="product-quantity">
+            <input type="number" value="2" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                Remove
+            </button>
+        </div>
+        <div class="product-line-price">25.98</div>
+    </div>
+
+    <div class="product">
+        <div class="product-image">
+            <img src="https://thumbs.dreamstime.com/b/two-hot-beautiful-delicious-italian-pizza-bacon-cheese-vegetables-view-herbs-mushrooms-flour-wooden-71217014.jpg"
+                 style="border-radius: 15px">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
+            <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while
+                quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+        </div>
+        <div class="product-price">15.30</div>
+        <div class="product-quantity">
+            <input type="number" value="1" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                Remove
+            </button>
+        </div>
+        <div class="product-line-price">45.99</div>
+    </div>
+    <div class="product">
+        <div class="product-image">
+            <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_27/1586836/hotdogs-te-square-200702.jpg"
+                 style="border-radius: 15px">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Dingo Dog Bones</div>
+            <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these
+                things! I got curious once and ate one myself. I'm a fan.</p>
+        </div>
+        <div class="product-price">7.99</div>
+        <div class="product-quantity">
+            <input type="number" value="2" min="1">
+        </div>
+        <div class="product-removal">
+            <button class="remove-product">
+                Remove
+            </button>
+        </div>
+        <div class="product-line-price">25.98</div>
+    </div>
+
+
+    <div class="totals">
+        <div class="totals-item">
+            <label>Subtotal</label>
+            <div class="totals-value" id="cart-subtotal">71.97</div>
+        </div>
+        <div class="totals-item">
+            <label>Shipping</label>
+            <div class="totals-value" id="cart-shipping">15.00</div>
+        </div>
+        <div class="totals-item totals-item-total">
+            <label>Grand Total</label>
+            <div class="totals-value" id="cart-total">90.57</div>
+        </div>
+    </div>
+
+    <button class="checkout"><a
+            href="http://localhost:63342/FinalProjectDaw/project1/payment/payment.html?_ijt=e5fvgjfpas0onv659qr67dam9m&_ij_reload=RELOAD_ON_SAVE"
+            style="text-decoration: none">Get Products</a></button>
+
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Cart.js"></script>
+</html>
